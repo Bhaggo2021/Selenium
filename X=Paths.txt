@@ -1,0 +1,45 @@
+x - path syntax :
+
+XPath=//tagname[@attribute='value']
+
+//	 === Select current node.
+@ 	=== Select attribute.
+Tagname == Tagname of the particular node.
+Attribute == Attribute name of the node.
+Value == Value of the attribute.
+
+Absolute XPath: /html/body/div[1]/div/div[2]/header/div/div[2]/a/img
+
+Relative XPath: //*[@id="block-perfecto-main-menu"]/ul/li[6]/a
+
+1. Basic XPath  :  //*[@name='username']
+
+XPath=//*[@name='username']
+
+XPath=//input[@type='text']                
+XPath=//input[@id='username’]
+XPath=//input[@value='RESET']
+XPath=//a[@href='http://perfecto.io/']
+
+2. Contains()   :   //*[contains(@id,'Name')
+
+3. Using OR & AND  :    //*[@id='FirstName' or @name='LastName']  	||     //*[@id='FirstName' and @name='FirstName']
+
+4. Starts-With Function  :  //input[starts-with(@class,'form')]
+
+5. Text() : 	//*[text()='Username or email']     
+
+6. Using Index  :  //*[@attribute='value'])[index] 	||	(//input[@type=”text”)[2]
+
+7. Link and PartialLink
+
+
+To validate x path and css : 
+go to consol thru inspect elem, near to network may be... 
+type $x(" ") : paste xpath inside " " 
+$(" ") : paste css
+
+here , $x is same for driver.findElem method.
+
+
+
